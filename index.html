@@ -9,14 +9,14 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<title>Cuando las máquinas aprenden</title>
+<title>slides slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="http://cdn.bootcss.com/reveal.js/3.1.0/css/reveal.css">
-<link rel="stylesheet" href="http://cdn.bootcss.com/reveal.js/3.1.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="reveal.js/css/reveal.css">
+<link rel="stylesheet" href="reveal.js/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'http://cdn.bootcss.com/reveal.js/3.1.0/css/print/pdf.css';
+        link.href = 'reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="http://cdn.bootcss.com/reveal.js/3.1.0/lib/js/html5shiv.js"></script>
+<script src="reveal.js/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -9181,15 +9181,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box
+/* This file is a compatability layer.  It allows the usage of flexible box 
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this
+`Modern browsers` comments below).  Browsers that are known to implement this 
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+
+    Internet Explorer 11+ 
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12397,7 +12397,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for
+  /* This injects handle bars (a short, wide = symbol) for 
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -12861,7 +12861,7 @@ ul.typeahead-list > li > a {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-
+    
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -12897,6 +12897,343 @@ ul.typeahead-list > li > a {
 .ansi-white-intense-bg { background-color: #A1A6B2; }
 
 .ansi-bold { font-weight: bold; }
+
+    </style>
+<style type="text/css">
+    body {
+    font-family: Fira Sans, Menlo, sans;
+}
+
+
+div #notebook { /* centre the content */
+    background: #f9f9f9; /* white background for content */
+    /*background-image: url("wp3.jpg");*/
+    background-image: url("Bender.png");
+    /*background-image: url("Fry.png");*/
+    /*background-image: url("Leela.png");*/
+    /*background-image: url("Farnsworth.png");*/
+    /*background-image: url("Zoidberg.png");*/
+    /*background-image: url("Nibbler.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-size: contain;*/
+    /* width: 1000px; */
+    /*background-position: center;*/
+    /*background-attachment: scroll;*/
+    margin: auto;
+    padding-left: 1em;
+}
+
+div.cell { /* set cell width to about 80 chars */
+    /*width: 900px;*/
+}
+
+
+/* draw border around running cells */
+div.cell.border-box-sizing.code_cell.running {
+    border: 3px solid #D23;
+}
+
+.text_cell_render h1 {
+    font-weight: 400;
+    font-size: 32pt;
+    line-height: 100%;
+    color: #4271ae;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    display: block;
+}
+
+.text_cell_render h2 {
+    font-weight: 300;
+    line-height: 100%;
+    color: #3e999f;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+    display: block;
+}
+
+.text_cell_render h3 {
+    font-weight: 300;
+    margin-top:12px;
+    margin-bottom: 3px;
+    color: #718c00;
+}
+
+.text_cell_render h4 {
+    font-weight: 300;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    color: #f92672;
+}
+
+
+
+/* Formatting code in markdown cells */
+div.rendered_html code {
+    font-style: italic;
+    font-weight: bold;
+    color: #FFFFF;
+    background-color: #FFFFFF;
+}
+
+
+
+/* Monokai */
+div.CodeMirror-lines {
+    /* font-family: 'Inconsolata',Inconsolata-dz; */
+    /* background-color: #222222; */
+    font-color: #b5bd68;
+    border: 0px;
+    /* padding-top: 1em; */
+    padding-bottom: 1em;
+}
+
+.CodeMirror pre {
+  /*font-family: 'Inconsolata','Inconsolata-dz','Menlo', 'Ubuntu Mono', monospace;*/
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Based on Sublime Text's Monokai theme */
+/*.cm-s-ipython {background: #272822; color: #f8f8f2;}
+.cm-s-ipython div.CodeMirror-selected {background: #49483E !important;}
+.cm-s-ipython .CodeMirror-gutter {background: #272822;font-color: #b5bd68; border-right: 0px;}
+.cm-s-ipython .CodeMirror-gutter-text {color: #d0d0d0;}
+.cm-s-ipython .CodeMirror-cursor {border-left: 1px solid #f8f8f0 !important;}
+.cm-s-ipython span.cm-comment {color: #dddddd;}
+.cm-s-ipython span.cm-atom {color: #ae81ff;}
+.cm-s-ipython span.cm-number {color: #ae81ff;}
+.cm-s-ipython span.cm-property, .cm-s-ipython span.cm-attribute {color: #a6e22e;}
+.cm-s-ipython span.cm-keyword {color: #f92672;}
+.cm-s-ipython span.cm-string {color: #e6db74;}
+.cm-s-ipython span.cm-variable {color: #a6e22e;}
+.cm-s-ipython span.cm-variable-2 {color: #9effff;}
+.cm-s-ipython span.cm-def {color: #fd971f;}
+.cm-s-ipython span.cm-error {background: #f92672; color: #f8f8f0;}
+.cm-s-ipython span.cm-bracket {color: #f8f8f2;}
+.cm-s-ipython span.cm-tag {color: #f92672;}
+.cm-s-ipython span.cm-link {color: #ae81ff;}
+.cm-s-ipython .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}*/
+
+/* BEGINNING CELL STYLE */
+.cm-s-ipython.CodeMirror {
+ font-family: monospace, monospace;
+ font-size: 11pt;
+ background: #293340;
+ color: #cdd2e9;
+ border-radius: 2px;
+ font-style: normal;
+ font-weight: normal;
+}
+.cm-s-ipython div.CodeMirror-selected {
+ background: #334050;
+}
+.cm-s-ipython .CodeMirror-gutters {
+ background: #334050;
+ border: none;
+ border-radius: 0px;
+ width: 36px;
+}
+.cm-s-ipython .CodeMirror-linenumber {
+ color: #546386;
+}
+.CodeMirror-sizer {
+ margin-left: 40px;
+}
+.CodeMirror-linenumber,
+div.CodeMirror-linenumber,
+.CodeMirror-gutter.CodeMirror-linenumberdiv.CodeMirror-gutter.CodeMirror-linenumber {
+ padding-right: 1px;
+ margin-left: 0px;
+ margin: 0px;
+ width: 26px !important;
+ padding: 0px;
+ text-align: right;
+}
+.CodeMirror-linenumber {
+ color: #546386;
+}
+.cm-s-ipython .CodeMirror-cursor {
+ border-left: 2px solid #0095ff !important;
+}
+.cm-s-ipython span.cm-comment {
+ color: #667fb1;
+ font-style: italic;
+}
+.cm-s-ipython span.cm-atom {
+ color: #be86e3;
+}
+.cm-s-ipython span.cm-number {
+ color: #51c0ef;
+}
+.cm-s-ipython span.cm-property {
+ color: #cdd2e9;
+}
+.cm-s-ipython span.cm-attribute {
+ color: #cdd2e9;
+}
+.cm-s-ipython span.cm-keyword {
+ color: #4cb2ff;
+ font-weight: normal;
+}
+.cm-s-ipython span.cm-string {
+ color: #61ba86;
+}
+.cm-s-ipython span.cm-meta {
+ color: #ffec8e;
+}
+.cm-s-ipython span.cm-operator {
+ color: #00b4ff;
+}
+.cm-s-ipython span.cm-builtin {
+ color: #e17e85;
+}
+.cm-s-ipython span.cm-variable {
+ color: #cdd2e9;
+}
+.cm-s-ipython span.cm-variable-2 {
+ color: #e17e85;
+}
+.cm-s-ipython span.cm-variable-3 {
+ color: #ffec8e;
+}
+.cm-s-ipython span.cm-def {
+ color: #ffec8e;
+ font-weight: normal;
+}
+.cm-s-ipython span.cm-error {
+ background: rgba(191,97,106,.4);
+}
+.cm-s-ipython span.cm-tag {
+ color: #be86e3;
+}
+.cm-s-ipython span.cm-link {
+ color: #51c0ef;
+}
+.cm-s-ipython span.cm-storage {
+ color: #be86e3;
+}
+.cm-s-ipython span.cm-entity {
+ color: #be86e3;
+}
+.cm-s-ipython span.cm-quote {
+ color: #61ba86;
+}
+/* ENDING CELL STYLE */
+
+/* No border for selected cells */
+div.cell.selected {
+    border: 0px;
+}
+
+/*Input and output cells formatting*/
+div.prompt.input_prompt, div.prompt.output_prompt {
+    font-family: 'Inconsolata','Inconsolata-dz';
+    font-weight: 200;
+    color: #dc322f;
+    border: 0px;
+}
+
+div.prompt.input_prompt {
+    /*background-color: #CCCCCC;*/
+}
+
+div.prompt.output_prompt {
+    background-color: #FFFFFF;
+    padding-top: 0.5em;
+    margin: 8px; /*This is for getting the box-shadow property of the parent to display properly;*/
+}
+
+div.prompt {
+    width: 6.5em;
+}
+
+
+
+div.input_area {
+    border: 0px;
+    margin-bottom: 0;
+}
+
+div.out_prompt_overlay.prompt {
+    width: 1em;
+    border: 0px;
+}
+
+div.out_prompt_overlay.prompt:hover {
+    border: 0px;
+    background-color: #f92672;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    opacity:0.2;
+}
+
+div.output_subarea.output_text.output_stream.output_stdout,div.output_subarea.output_text {
+    margin-left: 0em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-top: 8px; /*This is for getting the box-shadow property of the parent to display properly;*/
+}
+
+div.output_wrapper {
+    background-color: #FFFFFF;
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+
+div.output.vbox {
+    box-shadow:inset 0 0 8px #4d4d4d;   /* Check the output prompt settings when changing this*/
+}
+
+/************  TABLES  **********/
+.rendered_html table,
+.rendered_html tr,
+.rendered_html td {
+    font-family: "Fira Code", monospace;
+    font-size: 10 !important;
+    line-height: 150% !important;
+    border: 1px solid #D6D6D6;
+    color: #353535;
+}
+/********** PANDAS table **********/
+
+table.dataframe,
+.rendered_html tr,
+.dataframe * {
+    font-family: "Fira Code", monospace;
+    font-size: 10 !important;
+    /* border: 1px solid #D6D6D6;*/
+}
+.dataframe th,
+.rendered_html th {
+    font-family: Lato, Monaco, sans;
+    font-size: 12 !important;
+    font-weight: bold;
+}
+.dataframe td,
+.rendered_html td {
+    font-family: "Fira Code", monospace;
+    font-size: 10 !important;
+    color: #353535;
+    /* border: 1px solid #D6D6D6;*/
+    text-align: left;
+    min-width: 4em;
+}
+/********** PANDAS SUMMARY **********/
+.dataframe-summary-row tr:last-child,
+.dataframe-summary-col td:last-child {
+    font-family: Lato, Monaco, sans;
+    font-size: 10 !important;
+    font-weight: bold;
+    color: #353535;
+    border: 1px solid #D6D6D6;
+}
 
     </style>
 
@@ -13174,7 +13511,7 @@ a.anchor-link {
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -13200,13 +13537,13 @@ a.anchor-link {
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.collections.PathCollection at 0x114434be0&gt;</pre>
+<pre>&lt;matplotlib.collections.PathCollection at 0x118de19b0&gt;</pre>
 </div>
 
 </div>
@@ -13486,7 +13823,7 @@ SRJgMZYkSZIA+AC/nI3jmgFqQAAAAABJRU5ErkJggg==
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
@@ -13511,7 +13848,7 @@ SRJgMZYkSZIA+AC/nI3jmgFqQAAAAABJRU5ErkJggg==
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
@@ -14022,7 +14359,7 @@ ybMAAAAASUVORK5CYII=
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">textblob.classifiers</span> <span class="k">import</span> <span class="n">NaiveBayesClassifier</span>
@@ -14053,11 +14390,11 @@ ybMAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dev_Bayes</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="s2">&quot;Adquiere una membresía a nuestro club premier.&quot;</span><span class="p">)</span>
-<span class="c1">#dev_Bayes.classify(&quot;Nueva tarea sobre análisis matemático.&quot;)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#dev_Bayes.classify(&quot;Adquiere una membresía a nuestro club premier.&quot;)</span>
+<span class="n">dev_Bayes</span><span class="o">.</span><span class="n">classify</span><span class="p">(</span><span class="s2">&quot;Nueva tarea sobre análisis matemático.&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -14070,13 +14407,13 @@ ybMAAAAASUVORK5CYII=
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[22]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;SPAM&#39;</pre>
+<pre>&#39;NOT SPAM&#39;</pre>
 </div>
 
 </div>
@@ -14097,7 +14434,7 @@ ybMAAAAASUVORK5CYII=
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14108,7 +14445,7 @@ ybMAAAAASUVORK5CYII=
         <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">entradas</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">entradas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">entradas</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">pesos</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">pesos</span><span class="p">)</span>
-
+    
     <span class="k">def</span> <span class="nf">voy_no_voy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">umbral</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Calcula el output deseado.&quot;&quot;&quot;</span>
         <span class="n">si_no</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">entradas</span> <span class="o">@</span> <span class="bp">self</span><span class="o">.</span><span class="n">pesos</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">umbral</span>
@@ -14123,10 +14460,10 @@ ybMAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">entradas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">entradas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="n">pesos</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 
 <span class="n">dev</span> <span class="o">=</span> <span class="n">PerceptronDevNight</span><span class="p">(</span><span class="n">entradas</span><span class="p">,</span> <span class="n">pesos</span><span class="p">)</span>
@@ -14143,13 +14480,13 @@ ybMAAAAASUVORK5CYII=
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[39]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;Sí voy.&#39;</pre>
+<pre>&#39;No voy.&#39;</pre>
 </div>
 
 </div>
@@ -14160,7 +14497,7 @@ ybMAAAAASUVORK5CYII=
 </div></section></section><section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tqdm</span> <span class="k">import</span> <span class="n">tqdm_notebook</span> <span class="k">as</span> <span class="n">tqdm</span>
@@ -14196,7 +14533,7 @@ ybMAAAAASUVORK5CYII=
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Initialize Sigmoid Neuron:</span>
@@ -14215,7 +14552,7 @@ ybMAAAAASUVORK5CYII=
 
 <span class="c1"># Predecimos para probar la red:</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Predicción para [1, 1]: &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sigmoid</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sigmoid</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])))</span> 
 </pre></div>
 
 </div>
@@ -14247,15 +14584,15 @@ ybMAAAAASUVORK5CYII=
 
 
 
-
-
-<div id="19164578-ff85-471d-bd01-7bb178e73f44"></div>
+ 
+ 
+<div id="1af7663a-0c87-466f-91c8-e65c01943e0a"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#19164578-ff85-471d-bd01-7bb178e73f44');
+var element = $('#1af7663a-0c87-466f-91c8-e65c01943e0a');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "f72b8fe9d07446e9842f9fb86db6f3ff"}
+{"model_id": "a27138ebcc914e2f81672bd2ee399e45"}
 </script>
 </div>
 
@@ -14268,10 +14605,10 @@ var element = $('#19164578-ff85-471d-bd01-7bb178e73f44');
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-Nuevos pesos sinápticos luego del entrenamiento:
+Nuevos pesos sinápticos luego del entrenamiento: 
 [[ 6.09629146]
  [ 6.09625877]]
-Predicción para [1, 1]:
+Predicción para [1, 1]: 
 [ 0.99999493]
 </pre>
 </div>
@@ -14439,8 +14776,8 @@ require(
       waitSeconds: 15
     },
     [
-      "http://cdn.bootcss.com/reveal.js/3.1.0/lib/js/head.min.js",
-      "http://cdn.bootcss.com/reveal.js/3.1.0/js/reveal.js"
+      "reveal.js/lib/js/head.min.js",
+      "reveal.js/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -14455,9 +14792,9 @@ require(
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "http://cdn.bootcss.com/reveal.js/3.1.0/lib/js/classList.js",
+                { src: "reveal.js/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "http://cdn.bootcss.com/reveal.js/3.1.0/plugin/notes/notes.js",
+                { src: "reveal.js/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
